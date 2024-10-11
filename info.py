@@ -1,5 +1,4 @@
 import re
-import os
 from os import environ
 from Script import script 
 
@@ -14,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = str(os.getenv('API_ID', '9301087'))
-API_HASH = str(os.getenv('API_HASH', 'cbabdb3f23de6326352ef3ac26338d9c'))
-BOT_TOKEN = str(os.getenv('BOT_TOKEN', "7496068554:AAG65JE4qQBRyHQ86BPxvFpCrvQx39VnQyI"))
+API_ID = int(environ([API_ID', '9301087'])
+API_HASH = environ['API_HASH', 'cbabdb3f23de6326352ef3ac26338d9c']
+BOT_TOKEN = environ['BOT_TOKEN', "7496068554:AAG65JE4qQBRyHQ86BPxvFpCrvQx39VnQyI"]
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
